@@ -10,7 +10,25 @@ let loadInterval;
 function loader(element) {
   element.textContent = '';
 
-  loandInterval = setInterval(() => {
+  loadInterval = setInterval(() => {
     element.textContent += '.';
+
+    if(element.textContent === '...') {
+      element.textContent = ''
+    }
   }, 300)
 }
+
+function typeText(element, text) {
+  let index = 0;
+
+  let interval = setInterval(() => {
+    if(index<text.length){
+      element.innerHtml += text.chatAt(index);
+      index++
+    } else {
+      clearInterval(interval)
+    }
+  }, 20)
+}
+
