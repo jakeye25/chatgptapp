@@ -1,3 +1,3 @@
 # chatgptapp
 
-##Have fun at [FunChatBot](funchatbot.vercel.app)
+## Have fun at [FunChatBot](funchatbot.vercel.app)
